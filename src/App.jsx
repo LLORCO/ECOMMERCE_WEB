@@ -8,6 +8,7 @@ import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
  React.useEffect(()=>{
@@ -21,7 +22,7 @@ const App = () => {
  }, []);
 
   return (
-    <div>
+    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
       <Navbar/>
       <Hero/>
       <Products/>
@@ -30,7 +31,7 @@ const App = () => {
       <Subscribe />
       <Products/>
       <Testimonials/>
-      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolorem totam, minima ut praesentium rerum aspernatur sunt pariatur maiores voluptate perspiciatis nulla aliquid blanditiis, et maxime labore, reiciendis velit hic!</div>
+      <Footer/>
     </div>
   );
 }
